@@ -17,13 +17,14 @@
     width: 90%;
     max-width: 1300px;
     background-color: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   }
 
   th, td {
     border: 1px solid #dddddd;
+    border-spacing: 1px;
     text-align: center;
-    padding: 13px;
+    padding: 20px 5px;
   }
 
   th {
@@ -31,7 +32,7 @@
   }
 
   .dboaa {
-    background-color: #b0e0e6; /* Azul Bebê */
+    background-color: #5cffb3; /* Azul Bebê */
   }
 
   .suave {
@@ -50,6 +51,18 @@
     background-color: #800000; /* Bordô */
     color: white;
   }
+
+  .nao-cobre {
+    background-color: #ffc0cb; /* Rosa Claro */
+  }
+
+  .cobre {
+    background-color: #98fb98; /* Verde Claro */
+  }
+
+  .sobra {
+    background-color: #afeeee; /* Azul Ciano */
+  }
 </style>
 </head>
 <body>
@@ -59,46 +72,64 @@
     <th>Matéria</th>
     <th>Nota que Falta</th>
     <th>Estado</th>
+    <th>Cobre/Não Cobre/Sobra</th>
+    <th>Quanto</th>
   </tr>
   <tr>
     <td>Bio</td>
     <td>0.9</td>
     <td class="dboaa">dboaa</td>
+    <td class="cobre">COBRE</td>
+    <td>—</td>
   </tr>
   <tr>
     <td>Fis</td>
     <td>2</td>
     <td class="suave">suave</td>
+    <td class="cobre">COBRE</td>
+    <td>—</td>
   </tr>
   <tr>
     <td>Geo</td>
     <td>2.9</td>
     <td class="presta-atencao">presta atenção</td>
+    <td class="nao-cobre">NÃO COBRE</td>
+    <td>1.1</td>
   </tr>
   <tr>
     <td>Hist</td>
     <td>2.9</td>
     <td class="critico">CRÍTICO</td>
+    <td class="nao-cobre">NÃO COBRE</td>
+    <td>1.9</td>
   </tr>
   <tr>
     <td>Lp</td>
     <td>3.8</td>
     <td class="recuperacao">RECUPERAÇÃO</td>
+    <td class="nao-cobre">NÃO COBRE</td>
+    <td>3.8</td>
   </tr>
   <tr>
     <td>Lit</td>
     <td>2.1</td>
     <td class="suave">suave</td>
+    <td class="nao-cobre">NÃO COBRE</td>
+    <td>2.1</td>
   </tr>
   <tr>
     <td>Mat</td>
     <td>3</td>
     <td class="critico">CRÍTICO</td>
+    <td class="nao-cobre">NÃO COBRE</td>
+    <td>1.4</td>
   </tr>
   <tr>
     <td>Quimica</td>
     <td>0.9</td>
     <td class="dboaa">dboaa</td>
+    <td class="sobra">SOBRA</td>
+    <td>1.9</td>
   </tr>
 </table>
 
